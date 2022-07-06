@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, Button, Grid, GridItem, Center } from "@chakra-ui/react";
+import { Grid, GridItem, Center } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
+import { MenuButton } from "./utils/MenuButton";
 
 export const Home: React.FC = () => {
   return (
@@ -17,22 +18,16 @@ export const Home: React.FC = () => {
         maxH="xs"
       >
         <GridItem w="100%">
-          <Button
-            leftIcon={<AddIcon w={6} mr={2} />}
-            colorScheme="blue"
-            variant="outline"
-          >
-            <Text>Add Order</Text>
-          </Button>
+          <MenuButton
+            Icon={<AddIcon w={6} mr={2} />}
+            text="Add Order"
+          ></MenuButton>
         </GridItem>
         <GridItem w="100%">
-          <Button
-            leftIcon={<AddIcon w={6} mr={2} />}
-            colorScheme="blue"
-            variant="outline"
-          >
-            <Text>Add Order</Text>
-          </Button>
+          <MenuButton
+            Icon={<AddIcon w={6} mr={2} />}
+            text="Add Order"
+          ></MenuButton>
         </GridItem>
       </Grid>
     </Center>

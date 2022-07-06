@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid, GridItem, Center } from "@chakra-ui/react";
-import { AddIcon } from "@chakra-ui/icons";
+import { AddIcon, AttachmentIcon } from "@chakra-ui/icons";
 import { MenuButton } from "./utils/MenuButton";
 
-export const Home: React.FC = () => {
+export const HomeMenu: React.FC = () => {
   return (
     <Center>
       <Grid
@@ -25,8 +25,8 @@ export const Home: React.FC = () => {
         </GridItem>
         <GridItem w="100%">
           <MenuButton
-            Icon={<AddIcon w={6} mr={2} />}
-            text="Add Order"
+            Icon={<AttachmentIcon w={6} mr={2} />}
+            text="Orders List"
           ></MenuButton>
         </GridItem>
       </Grid>
